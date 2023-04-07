@@ -9,6 +9,8 @@ packages = [{include = "puzzle_solver"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+opencv-python = "^4.7.0.72"
+matplotlib = "^3.7.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
