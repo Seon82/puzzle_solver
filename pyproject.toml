@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "puzzle_solver"
+version = "0.1.0"
+description = "A computer vision application to solve puzzles"
+authors = ["Dylan Sechet", "Agathe Gioan", "Xavier Jeunot"]
+license =  "MIT"
+readme = "README.md"
+packages = [{include = "puzzle_solver"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+isort = "^5.12.0"
+ruff = "^0.0.260"
+
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.ruff]
+ignore-init-module-imports = true
+line-length = 120
