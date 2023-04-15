@@ -13,5 +13,4 @@ def detect_tiles(img):
         w = stats[i, cv2.CC_STAT_WIDTH]
         h = stats[i, cv2.CC_STAT_HEIGHT]
         boxes.append(((x, y), (x + w, y + h)))
-    return boxes, centroids, 3
-
+    return boxes, centroids, num_labels, labels
